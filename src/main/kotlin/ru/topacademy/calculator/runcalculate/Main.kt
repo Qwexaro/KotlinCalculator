@@ -1,4 +1,4 @@
-package ru.topacademy.runcalculate
+package ru.topacademy.calculator.runcalculate
 
 import ru.topacademy.calculator.menu.Menu
 
