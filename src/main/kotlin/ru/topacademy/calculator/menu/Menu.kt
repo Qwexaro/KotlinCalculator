@@ -1,6 +1,10 @@
 package ru.topacademy.calculator.menu
 
-import ru.topacademy.calculator.operations.*
+import ru.topacademy.calculator.operation.*
+import ru.topacademy.calculator.operation.mathoperations.Addition
+import ru.topacademy.calculator.operation.mathoperations.Division
+import ru.topacademy.calculator.operation.mathoperations.Multiply
+import ru.topacademy.calculator.operation.mathoperations.Substraction
 import java.util.Scanner
 
 fun Menu() {
@@ -26,10 +30,10 @@ fun Menu() {
         val operation = Scanner(System.`in`).nextInt()
 
         when (operation) {
-            1 -> addition(number1, number2)
-            2 -> substraction(number1, number2)
-            3 -> multiply(number1, number2)
-            4 -> division(number1, number2)
+            1 -> Addition(number1, number2)
+            2 -> Substraction(number1, number2)
+            3 -> Multiply(number1, number2)
+            4 -> Division(number1, number2)
         }
 
     } while (operation != 0)
